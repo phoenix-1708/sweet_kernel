@@ -26,9 +26,12 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Build Test
-        run: echo "No problem, Go Ahead!"
-
+      - name: Preparations
+        run: |
+              sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y install git gh bc build-essential zip curl libstdc++6 git wget python python2 gcc clang libssl-dev openssl repo rsync flex bison gcc-aarch64-linux-gnu
+              git config --global user.name "phoenix-1708"
+              git config --global user.email "harikumar1708@gmail.com"
+              git config --global color.ui true
       # Runs a set of commands using the runners shell
       - name: Build
         run: ./build
