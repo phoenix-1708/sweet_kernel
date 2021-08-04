@@ -24,18 +24,16 @@ cd android_kernel_xiaomi_sweet
 # git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang.git clang
 # git clone --depth=1 https://github.com/Haseo97/Avalon-Clang-12.0.0.git clang
 # git clone https://github.com/phoenix-1708/Anykernel3-Tissot.git  --depth=1 AnyKernel
-git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 clang
-cd clang
+git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-cd ..
 git clone https://github.com/fabianonline/telegram.sh.git  -b master
 KERNEL_DIR=$(pwd)
-REPACK_DIR="${KERNEL_DIR}/AnyKernel"
+# REPACK_DIR="${KERNEL_DIR}/AnyKernel"
 IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz"
 SEND_DIR="${KERNEL_DIR}/telegram.sh"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-PATH="$(pwd)/clang/clang-r416183c/bin:$(pwd)/clang/aarch64-linux-android-4.9/bin:$(pwd)/clang/arm-linux-androideabi-4.9/bin:${PATH}"
+PATH="$(pwd)/linux-x86/clang-r416183c/bin:$(pwd)/aarch64-linux-android-4.9/bin:$(pwd)/arm-linux-androideabi-4.9/bin:${PATH}"
 export ARCH=arm64
 export KBUILD_BUILD_USER=phoenix-1708
 export KBUILD_BUILD_HOST=cirrusci
