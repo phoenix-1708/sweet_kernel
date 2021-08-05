@@ -26,8 +26,8 @@ cd android_kernel_xiaomi_sweet
 # git clone https://github.com/phoenix-1708/Anykernel3-Tissot.git  --depth=1 AnyKernel
 git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86
 # git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
-git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+git clone https://github.com/stormbreaker-project/aarch64-linux-android-4.9.git
+git clone https://github.com/stormbreaker-project/arm-linux-androideabi-4.9.git
 git clone https://github.com/fabianonline/telegram.sh.git  -b master
 KERNEL_DIR=/home/runner/work/sweet_kernel/phoenix/android_kernel_xiaomi_sweet
 REPACK_DIR="${KERNEL_DIR}/AnyKernel"
