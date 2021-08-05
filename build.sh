@@ -24,7 +24,7 @@ cd android_kernel_xiaomi_sweet
 # git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang.git clang
 # git clone --depth=1 https://github.com/Haseo97/Avalon-Clang-12.0.0.git clang
 # git clone https://github.com/phoenix-1708/Anykernel3-Tissot.git  --depth=1 AnyKernel
-git clone --depth=1 https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 /prebuilts/linux-x86 prebuilts/linux-x86
+git clone --depth=1 https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilts/linux-x86
 # git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
 cd prebuilts && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 gcc/aarch64-linux-android-4.9 && cd ..
 cd prebuilts && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 gcc/arm-linux-androideabi-4.9 && cd ..
