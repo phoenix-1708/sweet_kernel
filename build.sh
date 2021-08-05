@@ -11,7 +11,7 @@ default='\033[0m'
 
 # mkdir -p /tmp/rom # Where to sync source
 # cd /tmp/rom
-git clone https://github.com/phoenix-1708/scripts.git && cd scripts && bash setup/android_build_env.sh && cd ..
+git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh && cd ..
 
 mkdir phoenix
 cd phoenix
