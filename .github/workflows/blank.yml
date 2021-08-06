@@ -37,5 +37,9 @@ jobs:
         run: |
               wget https://raw.githubusercontent.com/phoenix-1708/sweet_kernel/main/build.sh
               source build.sh
+      - name: Upload to server
+        run: |
+              wget https://raw.githubusercontent.com/phoenix-1708/sweet_kernel/main/zip.sh
+              source zip.sh
       - name: Build Completion
         run: echo "Build Success!"
