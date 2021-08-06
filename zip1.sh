@@ -1,7 +1,6 @@
 #!/bin/bash
 
 git clone https://github.com/phoenix-1708/Anykernel.git -b master
-git clone https://github.com/fabianonline/telegram.sh.git  -b master
 
 KERNEL_DIR=$(pwd)
 IMAGE="/home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/out/arch/arm64/boot/Image.gz"
@@ -12,9 +11,12 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 cp $IMAGE $ZIP
 
 cd Anykernel
+
 zip -r9 PhoenixKernel.zip *
-cd ..
-cd $SEND_DIR
+
+git clone https://github.com/fabianonline/telegram.sh.git -b master telegram.sh
+
+cd telegram.sh
 
 ./telegram -t 1858827137:AAFZVaKOjAhjVyCXfiGgL-SK6dp7_lILZIE -c -509071822 -f $ZIP/PhoenixKernel.zip "Zip sent through GithubActions"
 echo "Zip Sent through GithubActions"
