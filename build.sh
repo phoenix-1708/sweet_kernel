@@ -28,12 +28,12 @@ git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x
 # git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
 git clone https://github.com/stormbreaker-project/aarch64-linux-android-4.9.git aarch64-linux-android-4.9
 git clone https://github.com/stormbreaker-project/arm-linux-androideabi-4.9.git arm-linux-androideabi-4.9
-git clone https://github.com/fabianonline/telegram.sh.git  -b master
+# git clone https://github.com/fabianonline/telegram.sh.git  -b master
 KERNEL_DIR=$(pwd)
-REPACK_DIR="${KERNEL_DIR}/AnyKernel"
+# REPACK_DIR="${KERNEL_DIR}/AnyKernel"
 IMAGE="/home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/out/arch/arm64/boot/Image.gz"
-DTB_T="${KERNEL_DIR}/out/arch/arm64/boot/dts/qcom/msm8953-qrd-sku3-tissot-treble.dtb"
-DTB="${KERNEL_DIR}/out/arch/arm64/boot/dts/qcom/msm8953-qrd-sku3-tissot-nontreble.dtb"
+# DTB_T="${KERNEL_DIR}/out/arch/arm64/boot/dts/qcom/msm8953-qrd-sku3-tissot-treble.dtb"
+# DTB="${KERNEL_DIR}/out/arch/arm64/boot/dts/qcom/msm8953-qrd-sku3-tissot-nontreble.dtb"
 SEND_DIR="/home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/telegram.sh"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 export PATH="$(pwd)/linux-x86/clang-r416183c/bin:$(pwd)/aarch64-linux-android-4.9/bin:$(pwd)/arm-linux-androideabi-4.9/bin:$PATH"
