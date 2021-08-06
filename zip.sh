@@ -4,8 +4,8 @@ git clone https://github.com/fabianonline/telegram.sh.git  -b master
 
 # Zipping
 KERNEL_DIR=$(pwd)
-IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz"
-SEND_DIR="${KERNEL_DIR}/telegram.sh"
+IMAGE="/home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/out/arch/arm64/boot/Image.gz"
+SEND_DIR="/home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/telegram.sh"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 cd $SEND_DIR
