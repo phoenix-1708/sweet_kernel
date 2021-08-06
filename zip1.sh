@@ -13,7 +13,7 @@ cp $IMAGE $ZIP
 
 cd Anykernel
 zip -r9 PhoenixKernel.zip *
-
+cd ..
 cd $SEND_DIR
 
 ./telegram -t 1858827137:AAFZVaKOjAhjVyCXfiGgL-SK6dp7_lILZIE -c -509071822 -f $ZIP/PhoenixKernel.zip "Zip sent through GithubActions"
