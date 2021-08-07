@@ -20,7 +20,7 @@ echo "zipping Finished"
 ls
 echo "Copying to telegram folder"
 $(pwd)
-cp $HOME/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/Anykernel/PhoenixKernel.zip $HOME/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/telegram
+cp $HOME/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/Anykernel/PhoenixKernel.zip/PhoenixKernel.zip $HOME/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/telegram
 echo "Copied to telegram folder"
 echo "changing to telegram dir"
 cd ..
