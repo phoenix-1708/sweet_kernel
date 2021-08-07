@@ -19,7 +19,7 @@ zip -r9 PhoenixKernel.zip *
 echo "zipping Finished"
 ls
 echo "Copying to telegram folder"
-cp $ZIP_FINAL $SEND_DIR
+cp /home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/Anykernel/PhoenixKernel.zip /home/runner/work/sweet_kernel/sweet_kernel/phoenix/android_kernel_xiaomi_sweet/telegram
 echo "Copied to telegram folder"
 echo "changing to telegram dir"
 cd ..
