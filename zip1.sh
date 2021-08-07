@@ -16,7 +16,7 @@ cd Anykernel
 echo "zipping Started"
 zip -r9 PhoenixKernel.zip *
 echo "zipping Finished"
-ls
+$ls
 echo "Copying to telegram folder"
 cp PhoenixKernel.zip $SEND_DIR
 echo "Copied to telegram folder"
@@ -24,7 +24,7 @@ echo "changing to telegram dir"
 cd ..
 cd telegram
 echo "changed to telegram dir"
-ls
+$ls
 ./telegram -t 1858827137:AAFZVaKOjAhjVyCXfiGgL-SK6dp7_lILZIE -c -509071822 -f PhoenixKernel.zip "Zip sent through GithubActions"
 echo "Zip Sent through GithubActions"
    #curl --upload-file ./PhoenixKernel_NonOC.zip https://transfer.sh/PhoenixKernel_NonOC.zip
